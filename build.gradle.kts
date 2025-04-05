@@ -29,6 +29,13 @@ dependencies {
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
+java {
+	toolchain {
+		languageVersion.set(JavaLanguageVersion.of(21))
+		vendor.set(JvmVendorSpec.ADOPTIUM)
+	}
+}
+
 tasks.jar{
 	manifest{
 		attributes["Main-Class"] = "com.hyuse.wot.WotApplication"
