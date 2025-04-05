@@ -1,0 +1,1 @@
+web: java -jar build/libs/wot-0.0.1-SNAPSHOT.jar
